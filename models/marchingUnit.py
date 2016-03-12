@@ -43,7 +43,7 @@ class MarchingUnit(Abstract):
 
 		# Cигнальный пистолет.
 		signal_pistol = (self.count_marching_unit * 1) + (
-			self.count_duty_part * 1)
+ 			self.count_duty_part * 1)
 
 		# 5,45 мм или 7,62 мм автомат.
 		automat = Abstract.procent(self, self.staff_member, 25) + (
