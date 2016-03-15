@@ -22,19 +22,19 @@ class Weapon(object):
 		# Kоличество строевых подразделений
 		self.count_marching_unit = count_marching_unit
 
-	def pistol(self):
+	def guns(self):
 		'''
 		Пистолеты
-		:return: int
-		'''
-		return int(self.staff_member)
-
-	def bestally_pistol(self):
-		'''
 		Бесствольные пистолеты
 		:return: int
 		'''
 		return int(self.staff_member)
+
+#	def bestally_pistol(self):
+#		'''
+#		Бесствольные пистолеты
+##		'''
+#		return int(self.staff_member)
 
 	def pistol_gun(self):
 		'''
@@ -81,8 +81,7 @@ class Weapon(object):
 
 if __name__ == '__main__':
 	weapon = Weapon(120)
-	assert weapon.pistol() == 120
-	assert weapon.bestally_pistol() == 120
+	assert weapon.guns() == 120
 	assert weapon.pistol_gun() == 60
 	weapon_odd = Weapon(121)
 	assert weapon_odd.pistol_gun() == 61
