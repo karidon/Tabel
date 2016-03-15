@@ -16,11 +16,11 @@ class Weapon(object):
 		:return:
 		'''
 		# Kолличество атестованных людей
-		self.staff_member = staff_member
+		self.staff_member = int(abs(staff_member))
 		# Kолличество дежурных частей
-		self.count_duty_part = count_duty_part
+		self.count_duty_part = int(abs(count_duty_part))
 		# Kоличество строевых подразделений
-		self.count_marching_unit = count_marching_unit
+		self.count_marching_unit = int(abs(count_marching_unit))
 
 	def guns(self):
 		'''
