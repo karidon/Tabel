@@ -27,14 +27,14 @@ class Weapon(object):
 		Пистолеты
 		:return: int
 		'''
-		return self.staff_member
+		return int(self.staff_member)
 
 	def bestally_pistol(self):
 		'''
 		Бесствольные пистолеты
 		:return: int
 		'''
-		return self.staff_member
+		return int(self.staff_member)
 
 	def pistol_gun(self):
 		'''
@@ -48,35 +48,35 @@ class Weapon(object):
 		Cигнальный пистолет.
 		:return: int
 		'''
-		return (self.count_marching_unit * 1) + (self.count_duty_part * 1)
+		return int((self.count_marching_unit * 1) + (self.count_duty_part * 1))
 
 	def automat(self):
 		'''
 		5,45 мм или 7,62 мм автомат.
 		:return: int
 		'''
-		return procent(self.staff_member, 25) + (self.count_duty_part * 3)
+		return int(procent(self.staff_member, 25) + (self.count_duty_part * 3))
 
 	def hand_gun(self):
 		'''
 		5,45 мм или 7,62 мм ручной пулемет
 		:return: int
 		'''
-		return self.count_marching_unit * 2
+		return int(self.count_marching_unit * 2)
 
 	def sniper_rifle(self):
 		'''
 		7,62 мм снайперская винтовка
 		:return: int
 		'''
-		return self.count_duty_part * 1
+		return int(self.count_duty_part * 1)
 
 	def special_carbine(self):
 		'''
 		18,5 мм карабин специальный.
 		:return: int
 		'''
-		return self.count_duty_part * 2
+		return int(self.count_duty_part * 2)
 
 
 if __name__ == '__main__':
