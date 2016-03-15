@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*-
 
+__author__ = 'karidon'
+__email__ = 'Genek_x@mail.ru'
+__date__ = '2016-03-15'
+
 from preprocessing import procent
 
 
 class Weapon(object):
-	"""Считает строевое подразделение"""
+	"""Считает оружие согласно положенности в стоевом подразделении"""
+
 	def __init__(self, staff_member, count_duty_part=1, count_marching_unit=1):
 		'''
 		:param staff_member: int
@@ -74,7 +79,6 @@ class Weapon(object):
 		return self.count_duty_part * 2
 
 
-
 if __name__ == '__main__':
 	weapon = Weapon(120)
 	assert weapon.pistol() == 120
@@ -84,7 +88,7 @@ if __name__ == '__main__':
 	assert weapon_odd.pistol_gun() == 61
 	assert weapon_odd.signal_pistol() == 2
 	assert weapon_odd.hand_gun()
-	weapon_zero = Weapon(50, count_duty_part=0,count_marching_unit=0)
+	weapon_zero = Weapon(50, count_duty_part=0, count_marching_unit=0)
 	assert weapon_zero.hand_gun() == 0
 
 	print('Ok')
